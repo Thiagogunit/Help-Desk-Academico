@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             if (validateUser(email, password)) {
                 localStorage.setItem("loggedInUser", email);
-                window.location.href = "src/home.html";
+                window.location.href = "./src/home.html";
             } else {
                 Swal.fire({
                     title: 'Erro!',
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 icon: 'success',
                 confirmButtonText: 'OK'
             }).then(() => {
-                window.location.href = "meus-tickets.html";
+                window.location.href = "./meus-tickets.html";
             });
         });
     }
@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     icon: 'success',
                     confirmButtonText: 'OK'
                 }).then(() => {
-                    window.location.href = "meus-tickets.html";
+                    window.location.href = "./meus-tickets.html";
                 });
             }
         });
@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     icon: 'success',
                     confirmButtonText: 'OK'
                 }).then(() => {
-                    window.location.href = "meus-tickets.html";
+                    window.location.href = "./meus-tickets.html";
                 });
             }
         });
@@ -174,7 +174,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <td>${email.endsWith('@academico.domhelder.edu.br') ? ticket.responsavel : ticket.alunoEmail}</td>
                     <td>${ticket.dataAbertura}</td>
                     <td>${ticket.status}</td>
-                    <td><a class="btn btn-primary" href="visualizar-ticket.html?id=${index + 1}">Exibir</a></td>
+                    <td><a class="btn btn-primary" href="./visualizar-ticket.html?id=${index + 1}">Exibir</a></td>
                 `;
                 ticketsList.appendChild(tr);
             });
@@ -191,7 +191,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 const li = document.createElement("li");
                 li.innerHTML = `
                     <i class="fas fa-ticket-alt"></i> ${ticket.assunto} - ${ticket.status}
-                    <a href="visualizar-ticket.html?id=${index + 1}" class="btn btn-sm btn-link">Exibir</a>
+                    <a href="./visualizar-ticket.html?id=${index + 1}" class="btn btn-sm btn-link">Exibir</a>
                 `;
                 recentTicketsList.appendChild(li);
             });
