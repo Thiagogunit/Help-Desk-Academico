@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+.navbar {
+    background-color: #c4213e;
+}
+
+.navbar .navbar-brand, .navbar .nav-link, .navbar .navbar-text {
+    color: #ffffff !important;
+}
+
+.navbar .nav-link {
+    margin-right: 15px;
+}
+
+.navbar .navbar-text {
+    margin-left: 15px;
+}
+
+.container {
+    margin-top: 30px;
+}
+
+.card {
+    border-color: #c4213e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.card-header {
+    background-color: #c4213e;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #c4213e;
+    border-color: #c4213e;
+}
+
+.btn-primary:hover {
+    background-color: #a8182d;
+    border-color: #a8182d;
+}
+
+h1 {
+    color: #c4213e;
+}
+
+#logo {
+    width: 50px;
+    height: auto;
+}
+
+.navbar-nav .nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav .nav-item .nav-link {
+    padding: 10px 20px;
+}
+
+.navbar-nav .navbar-text {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav .nav-item:last-child .nav-link {
+    margin-right: 0;
+}
+
+.welcome-message {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 24px;
+    color: #c4213e;
+}
+
+.card-body ul {
+    padding-left: 20px;
+}
+
+.card-body ul li {
+    margin-bottom: 10px;
+}
+
+.card-body ul li i {
+    margin-right: 10px;
+}
+
+.card-body a {
+    color: #c4213e;
+    text-decoration: none;
+}
+
+.card-body a:hover {
+    text-decoration: underline;
+}
+
+.stat-box {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.stat-box h4 {
+    margin: 0;
+    font-size: 20px;
+    color: #c4213e;
+}
+
+.equal-height-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.equal-height-row .col-md-4,
+.equal-height-row .col-md-6 {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    background-color: #c4213e;
+    color: #ffffff;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}

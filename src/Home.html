@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - HelpDesk</title>
+    <link rel="stylesheet" href="../Estilos/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#"><img src="../Imagens/image.jpg" alt="Dom Helder Logo" id="logo"> Dom Helder</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                <li class="nav-item" id="abrirTicketNav" style="display: none;"><a class="nav-link" href="abrir-ticket.html">Abrir Ticket</a></li>
+                <li class="nav-item"><a class="nav-link" href="meus-tickets.html">Meus Tickets</a></li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item navbar-text">Bem-vindo, <span id="userName"></span></li>
+                <li class="nav-item"><a class="nav-link" href="#" id="logoutLink">Sair</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <div class="welcome-message">
+            <h1>Olá, <span id="welcomeMessage"></span></h1>
+        </div>
+        <div class="row equal-height-row">
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-title">Notificações Recentes</div>
+                    <div class="card-body">
+                        <p>Atualização importante no sistema de HelpDesk.</p>
+                        <p>Próxima reunião do conselho acadêmico: 15 de junho.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-title">Tickets Recentes</div>
+                    <div class="card-body">
+                        <ul id="recentTicketsList">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="stat-box">
+                    <h4>Tickets Abertos</h4>
+                    <p id="openTicketsCount">0</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="stat-box">
+                    <h4>Tickets Respondidos</h4>
+                    <p id="answeredTicketsCount">0</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="stat-box">
+                    <h4>Tickets Pendentes</h4>
+                    <p id="pendingTicketsCount">0</p>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-title">Links Úteis</div>
+                    <div class="card-body">
+                        <ul>
+                            <li><a href="#">Moodle</a></li>
+                            <li><a href="#">Biblioteca</a></li>
+                            <li><a href="#">Calendário Acadêmico</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-title">Ajuda Rápida</div>
+                    <div class="card-body">
+                        <ul>
+                            <li><a href="#">Perguntas Frequentes</a></li>
+                            <li><a href="#">Tutorial de Uso</a></li>
+                            <li><a href="#">Contato</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../JS/app.js"></script>
+</body>
+</html>
