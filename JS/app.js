@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             if (validateUser(email, password)) {
                 localStorage.setItem("loggedInUser", email);
-                window.location.href = "home.html";
+                window.location.href = "src/home.html";
             } else {
                 Swal.fire({
                     title: 'Erro!',
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
         logoutLink.addEventListener("click", (e) => {
             e.preventDefault();
             localStorage.removeItem("loggedInUser");
-            window.location.href = "index.html";
+            window.location.href = "../index.html";
         });
     }
 
